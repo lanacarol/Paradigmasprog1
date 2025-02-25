@@ -19,7 +19,7 @@ public class aluno {
     }
 
     public void notaFinal() {
-        this.media = (this.P1 + this.P2) / 2;
+        this.media = ((this.P1 + this.P2) / 2);
         System.out.println("Media " + this.media);
     }
 
@@ -27,9 +27,9 @@ public class aluno {
     public void dadosAluno(){
         System.out.println(
                 "Número do aluno: " + this.numeroAluno +
-                "Nome do aluno: " + this.nome +
-                "Idade do aluno" + this.idade +
-                "Média do aluno" + this.media
+                " Nome do aluno: " + this.nome +
+                " Idade do aluno: " + this.idade +
+                " Média do aluno: " + this.media
         );
     }
 
