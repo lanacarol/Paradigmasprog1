@@ -1,4 +1,4 @@
-package Lista1;
+package Exercicio1;
 
 public class aluno {
     public int idade, numeroAluno;
