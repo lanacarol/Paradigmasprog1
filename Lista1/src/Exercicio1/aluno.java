@@ -6,7 +6,7 @@ public class aluno {
     public String nome;
 
     public aluno() {
-        this.nome = "Nome inválido";
+        this.nome = "Sem nome";
     }
 
     public aluno(int numeroAluno, String nome, int idade, float P1, float P2, float media) {
@@ -23,16 +23,29 @@ public class aluno {
         System.out.println("Media " + this.media);
     }
 
+//    public void passou(){
+//        if(this.media >= 6){
+//            System.out.println("Passou.");
+//        }
+//        else{
+//            System.out.println("Não passou.");
+//        }
+//    }
+
+    public String passou1(){
+        return (this.media >= 6) ? "Passou " : "Não passou";
+    }
+
 
     public void dadosAluno(){
         System.out.println(
                 "Número do aluno: " + this.numeroAluno +
                 " Nome do aluno: " + this.nome +
                 " Idade do aluno: " + this.idade +
-                " Média do aluno: " + this.media
+                " Situação: " + this.passou1()
         );
     }
-
+    //this é o objeto que chama o metodo
 }
 
 
