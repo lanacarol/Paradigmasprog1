@@ -9,9 +9,9 @@ public class Rio {
         this.nome = "Sem nome";
     }
 
-    public Rio(String nome, float nível, boolean poluido){
+    public Rio(String nome, float nivel, boolean poluido){
         this.nome = nome;
-        this.nivel = nível;
+        this.nivel = nivel;
         this.poluido = poluido;
     }
 
@@ -20,7 +20,12 @@ public class Rio {
     }
 
     public void ensolarar(float x){
-        this.nivel -= x;
+        if(this.nivel >= x) {
+            this.nivel -= x;
+        }
+        else{
+            System.out.println("Nível do rio não alterado.");
+        }
     }
 
     public void limpar(){
@@ -32,7 +37,7 @@ public class Rio {
     }
 
     public void mostra(){
-        System.out.println ("Nome do Rio: " + nome + " Nível do rio: " + nivel + " O rio está poluido? " + poluido);
+        System.out.println ("Nome do Rio: " + nome + " Nível do rio: " + nivel + " O rio está poluido? " + (poluido? "Sim": "Não"));
     }
 }
 

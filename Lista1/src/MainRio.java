@@ -13,7 +13,7 @@ public class MainRio {
 
         Rio obj2 = new Rio ();
         obj2.nome = "Rio Amazonas";
-        obj2.nivel = 123;
+        obj2.nivel = 123.5f;
         obj2.poluido = true;
         obj2.chover(7);
         obj2.ensolarar(2);
